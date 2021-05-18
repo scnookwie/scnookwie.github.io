@@ -1,37 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Card Captor Sakura</title>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="mystyle.css">
-  <style type="text/css">
-  </style>
-</head>
+<!doctype html>
+<html lang="zh_CN">
+  <head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 
-<body>
-    <body style="background-color:lavender">
-    <p align="center">THE PUZZLE GAME</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
-    <h3>According to the rule of the numbers in the picture,choose the right answer.</h3>
-    <h4 style="border-style:solid;border width:1px">I hope you can get the right answer：D</h4>
+    <title>CARD CAPTOR SAKURA</title>
+    <audio src="catch.mp3"  autoplay="autoplay" loop="true"></audio>
 
-    <h4>Think it carefully!What is the answer of ?</h4>
+  </head>
 
-    <table border="2" cellpadding="20" cellspacing="1">
-      <tr>
-        <td>B</td>
-        <td>D</td>
-        <td>G</td>
-        <td>K</td>
-        <td>?</td>
+<body style="background-repeat:no-repeat;background-size:cover;background-color: #fff0f5; ">
 
-    <p id="demo">Click the button to answer the puzzle.</p>
-    <button onclick="sayAnswer()">Please click me!</button>
+<div class="clearfix">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#" >
+        <img src="123.png" alt="" width="200" >
+       </a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+            </button>
+           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+           <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#" style="color:#ff6666"><strong>首页</strong></a>
+                <a class="nav-link" href="character.html" target="_blank" style="color:#ff9999">主要人物</a>
 
-  <ul class="navbar">
-  <li><a href="key.html">Key.</a>
-  </ul>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#ff9999">
+                    卡牌介绍
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="card1.html" target="_blank" style="color:#ff9999">库洛牌</a></li>
+                    <li><a class="dropdown-item" href="card2.html" target="_blank" style="color:#ff9999">小樱牌</a></li>
+                    <li><a class="dropdown-item" href="card3.html" target="_blank" style="color:#ff9999">透明牌</a></li>
+                  </ul>
+                     </li>
+                <a class="nav-link" href="cartoon.html" target="_blank" style="color:#ff9999">动画观看</a>
+              </div>
+            </div>
+          </div>
+</nav>
+</div>
 
-</body>
-<html>
+<div align="center">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="8.jpg"  alt="..." height="610" >
+      <div class="carousel-caption d-none d-md-block">
+        <h3 class="fw-bold" style="color:#333333">CARD CAPTOR SAKURA<h3>
+         <h4 style="color:#333333">魔卡少女樱</h4>
+         <p style="color:#333333" >欢迎来到小樱的魔法世界！</p>
+         <a href = "cartoon.html" target="_blank" >
+         <button type="button" class="btn btn-outline-light" style="color:#333333;border:10em">即刻前往魔法世界</button>
+         </a>
+       </div>
+  </div>
+    <div class="carousel-item">
+      <img src="2.jpg."  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="3.jpg"  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="4.jpg."  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="5.jpg."  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="6.jpg."  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="7.jpg."  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="1.jpg."  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="9.jpg."  alt="..." height="610" >
+    </div>
+    <div class="carousel-item">
+      <img src="10.jpg."  alt="..." height="610" >
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+<div class="clearfix" style=" margin-top:30px ;margin-left:100px;margin-right:100px;background: url('11123.jpg');background-size:100%;height:320px" >
+  <img src="11111.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="..." height="320px">
+  <h7 style="padding-left: 30px;padding-top:10px"></br>
+    <h7 style="padding-left: 30px;padding-top:10px">在那个不知“萌”为何物的年代，<br />
+    <h7 style="padding-left: 30px;">我们踏进了一个魔法世界，   <br /> <br />
+      <h7 style="padding-left: 30px;">遇上了一个善良可爱又坚强的女孩子，  <br />
+        <h7 style="padding-left: 30px;">她的笑容让一切都变得美好简单。  <br />
+          <h7 style="padding-left: 30px;">“绝对没问题的！”  <br />
+   <h7 style="padding-left: 30px;">是她的无敌咒语。<br />  <br />
+     <h7 style="padding-left: 30px;">在《魔卡少女樱》里，  <br />
+       <h7 style="padding-left: 30px;">我们看到了真诚善良的闪光，  <br />
+         <h7 style="padding-left: 30px;">懂得了珍惜周围的亲情友情爱情。  <br />
+           <h7 style="padding-left: 30px;">虽然我们的长大了，但小樱的故事仍然在继续……<h5>
+</div>
+
+<img src="1234.png" class="img-fluid" alt="..." style="height:80px;margin-left:520px">
+
+
+<div class="wrap" style="margin-left:140px">
+    <div class="box">
+        <div class="left"></div>
+        <div class="center">
+          <span style="background-color: #d87093">1998.4</br>《魔卡少女樱》</span>
+        </div>
+        <div class="right">
+          <p style="margin-top:40px;margin-left:15px;margin-right:10px">
+          故事讲述了小学四年级生木之本樱偶然间打开了藏在家中的魔法书，里面装有牌。然而，在读写在上面的文字的时候，刮来了剧烈的风，牌四处飞散开去，
+          不小心使其中被封印的库洛牌飞向各处造成一系列混乱。后来经过努力,在大家的帮助下，小樱成功将牌全部收服，并且用自己的魔力将库洛牌转换为小樱牌，
+          成为了牌的新主人。</p>
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="left">
+          <p style="margin-top:40px;margin-left:15px;margin-right:10px">
+            一天放学后，小樱和知世一起去玩具店里购买笔记本，正好碰到店里有抽奖活动，小樱在偶然间抽到特等奖“香港旅游”，
+            小樱就和自己最好的朋友大道寺知世和哥哥桃矢以及雪兔四人去香港旅游，第一次来到中国的她在香港见到了很多新奇事物，
+            在香港游玩的过程中得知了库洛里多的往事并成功收复新的库洛牌。
+          </p>
+        </div>
+        <div class="center">
+          <span style="background-color: #d87093">
+            1999.8</br>《魔卡少女樱》</br>香港之旅
+        </span>
+      </div>
+        <div class="right"></div>
+    </div>
+
+    <div class="box">
+        <div class="left"></div>
+        <div class="center"><span style="background-color: #d87093">
+            2000.8</br>《魔卡少女樱》</br>被封印的卡片
+        </span></div>
+        <div class="right">
+            <p style="margin-top:10px;margin-left:15px;margin-right:10px">
+          一张拥有“负”的力量的牌，原本封印在库洛·里多的旧家，是库洛牌中魔力最强的一张，有其他52张相同的魔法，用来和其他的牌达到平衡。
+          但因为其他的牌都变成小樱牌，失去平衡，封印解除。想要收服无牌，必须要以失去最珍贵的感情为代价。
+          在小樱和52张牌的安抚下，无牌被感动，同意被重新封印。
+          无牌选择让小狼失去和小樱的这段感情。小樱的泪水激活了爱牌，
+          最终无牌与爱牌合为一张小樱牌，名为希望。希望牌发挥魔力，让小狼恢复了对小樱的感情。
+          </p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="left">
+            <p style="margin-top:30px;margin-left:15px;margin-right:10px">
+          小樱集齐了会给世间带来灾难的“库洛牌”，并用魔法的力量将它们变成了自己的牌后，过上了一段没有魔法的平静生活。
+          樱花盛开的4月，小樱升入了初中1年级。而后，小樱与曾返回香港的小狼重逢，并一起开心地去往学校。
+          某个夜里，收集的牌出现了异常……而友枝町接连发生奇怪的事。小樱在梦中遇见的“钥匙”的指引下，再次开始收集卡片。这时，班里转来一个女孩子……
+        </p>
+        </div>
+        <div class="center" ><span style="background-color: #d87093">
+            2018.1</br>《魔卡少女樱》</br>CLEAR CARD
+        </span></div>
+        <div class="right"></div>
+    </div>
+
+</div>
+
+
+<footer class="footer text-center" style="background-color: #ffcccc;margin-top:200px;margin-bottom:-18px ">
+	<p><strong>© CLAMP</strong></br>https://clamp-net.com/</br></p>
+</footer>
+
+
+  </body>
+</html>
