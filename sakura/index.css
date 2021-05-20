@@ -8,6 +8,7 @@
     width: 1000px;
     position: relative;
     top: 100px;
+
 }
 .wrap::after{
     content: '';
