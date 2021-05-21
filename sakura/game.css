@@ -6,7 +6,7 @@
 body{
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(45deg,#d8f2f3 0%,#ebf9f9 100%);
+  background-color: #ffcccc;
 }
 .center,.front-face,
 .contents,.back-face{
@@ -25,8 +25,7 @@ body{
   height: 100%;
   width: 100%;
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,.2),
-              rgba(0,0,0,.2)),url(bg.jpeg);
+  background-color:#ff9999;
   background-size: cover;
   background-position: center;
   transform: translateY(0deg);
@@ -43,12 +42,12 @@ body{
   transform: translateY(-50%) translateZ(60px) scale(0.94);
 }
 .front p{
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 15px;
   color: white;
 }
 .front span{
-  font-size: 23px;
+  font-size: 18px;
   color: white;
 }
 .front p:after{
@@ -64,17 +63,17 @@ body{
 }
 .back-face{
   transform: rotateY(180deg);
-  background: linear-gradient(45deg,#043348 0%,#032535 100%);
+
 }
 .back {
-  color: white;
+  color: black;
 }
 .back h2{
-  font-size: 33px;
+  font-size: 25px;
   padding-bottom: 5px;
 }
 .back span{
-  font-size: 25px;
+  font-size: 18px;
 }
 .icons{
   margin: 10px 0;
